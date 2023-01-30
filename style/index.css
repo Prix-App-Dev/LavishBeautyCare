@@ -4,14 +4,18 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', serif;
 }
-
 #topbar{
-    height: 15vh;
+    height: 13vh;
     background-color: black;
     border-bottom: 2px solid #E22B63;
     display: flex;
     align-items: center; 
     justify-content: space-between;
+}
+.topbarlogo{
+    height: 12vh;
+    width:15vw;
+    padding: 5px;
 }
 #middlesection{
     display: flex;
@@ -20,19 +24,23 @@
 #contactno{
     border: 1px solid #E22B63;
     color:#E22B63;
-    height: 8vh;
+    height: 7vh;
+    width:175px;
     padding: 5px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-right: 10px;
 }
 #middlesection a{
-    height: 8vh;
+    width:175px;
+    height: 7vh;
     padding: 5px;
     display: flex;
     align-items: center;
-    letter-spacing: 1.5px;
+    justify-content: center;
+    letter-spacing: 1px;
     background-color: #E22B63;
     color: white;
     text-decoration: none;
@@ -42,10 +50,7 @@
     display: flex;
     align-items: center;
 }
-.topbarlogo{
-    height: 13vh;
-    padding: 5px;
-}
+
 #topbar ul{
     margin-left: auto;
     padding: 5px;
@@ -56,8 +61,8 @@
     display: inline;
     margin-left: 30px;
     color:white;
-    font-size: larger;
-    letter-spacing: 1.5px;
+    font-size: 1.5vw;
+    letter-spacing: 1.2px;
 }
 #topbar ul li a{
     text-decoration: none;
@@ -74,6 +79,7 @@
     font-size: 5vw;
     display: none;
     margin-right: 1vw;
+    width:7vw;
 }
 
 #middleSection{
@@ -114,14 +120,18 @@
     font-size: 3vh;
     letter-spacing: 2px;
 }
+#midLeft h6{
+    color: #E22B63;
+    font-size: 3vh;
+}
 #midLeft button{
     background-color: #E22B63;
     color: white;
     font-size: 3vh;
     letter-spacing: 1px;
     border-radius: 10px;
-    width:200px;
-    height: 70px;
+    width:15vw;
+    height: 8vh;
 }
 #midLeft p{
     color: white;
@@ -138,4 +148,127 @@
     background-size: cover;
     border-left: 2px solid #E22B63;
 }
-/* Responsive design */
+
+/* Responsive design for tablet*/
+@media screen and (max-width:820px) and (min-height:768px){
+    #middleSection{
+        height: 60vh;
+    }
+    #midMain{
+        height: 50vh;
+        width: 90vw;
+    }
+    #topbar{
+        height: 10vh;        
+    }
+    .topbarlogo{
+        height: 9vh;
+        width: 20vw;
+        padding: 5px;
+    }
+    #middlesection a{
+        height: 6vh;
+        font-size: 2.2vw;
+        font-weight: 900;
+    }
+    #contactno{
+        height: 6vh;
+        font-size: 2.2vw;
+        font-weight: 900;
+    }
+    #topbar ul{
+        top:10vh;
+        left:0;
+        width: 100%;
+        background-color: #E22B63;
+        color: white;
+        position: absolute;
+        transition: 0.5s ease;
+        display: none;
+    }
+    #topbar ul li{
+        display: block;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    
+    #topbar ul li a.active{
+        color: white;
+    }
+    #menuburger{  
+        display: block;
+    }
+    
+    #midLeft h1{
+        font-size: 3vw;
+        letter-spacing: 1.5px;
+    }
+    #midLeft h6{
+        font-size: 3vw;
+    }
+    #midLeft p{
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+    #midLeft button{
+        width: 20vw;
+        height: 6vh;
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width:768px) and (max-height:600px){
+    #topbar{
+        height: 10vh;        
+    }
+    .topbarlogo{
+        height: 9vh;
+        width: 18vw;
+        padding: 5px;
+    }
+    #middlesection a{
+        display: none;
+    }
+    #contactno{
+        height: 6vh;
+    }
+    #topbar ul{
+        display: none;
+    }
+    #menuburger{  
+        display: block;
+    }
+    #midMain{
+        height: 75vh;
+        width: 90vw;
+    }
+    #midLeft h1{
+        font-size: 3vw;
+        letter-spacing: 1.5px;
+    }
+    #midLeft h6{
+        font-size: 3vw;
+    }
+    #midLeft p{
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+    #midLeft button{
+        width: 20vw;
+        height: 6vh;
+        font-size: 2.5vw;
+    }
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width:480px){
+    #topbar{
+        height: 7vh;        
+    }
+    .topbarlogo{
+        height: 7vh;
+        padding: 5px;
+    }
+    #contactno{
+        display: none;
+    }
+}

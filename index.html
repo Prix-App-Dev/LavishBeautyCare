@@ -22,7 +22,7 @@
         <img src="images/topbarlogo.png" alt="logo" class="topbarlogo">
         <div id="middlesection">
             <div id="contactno">+1(647)992-0132</div>
-            <a href="">Book an Appointment</a>
+            <a href="">Book Appointment</a>
         </div>
         <div id="menubar">
             <div id="navbar">
@@ -41,7 +41,9 @@
         <div class="overlay">
             <div id="midMain">
                 <div id="midLeft">
-                    <h1>Look Better<br/><br/>Feel Better</h1><br/><br/>
+                    <h1>Look Better. Feel Better</h1>
+                    <h6><u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></h6>                    
+                    <br/><br/>
                     <p>When a website visitor decides to go to the “About Us” page for your Salon business, 
                         he or she is on a fact-finding mission, as well as looking for the “story” of your Salon business. 
                         It’s crucial that your “About Us” page says what goods or services your Salon business provides.
@@ -60,8 +62,10 @@
             const faburger=document.getElementById("faburger");
             if(faburger.className=="fa fa-bars"){
                 faburger.className="fa fa-xmark";
+                const menuul=(document.getElementById("navbar")).getElementsByTagName("ul")[0].style.display="block";
             }else{
                 faburger.className="fa fa-bars";
+                const menuul=(document.getElementById("navbar")).getElementsByTagName("ul")[0].style.display="none";
             }
             
         }
