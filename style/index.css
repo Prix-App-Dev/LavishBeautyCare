@@ -78,7 +78,7 @@
 
 #middleSection{
     height: 85vh;
-    background-image: url('/public/images/bgimg1.jpg');
+    background-image: url('../images/bgimg1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -133,7 +133,7 @@
 }
 #midRight{
     width:50%;
-    background-image: url(/public/images/bgimg2.jpg);
+    background-image: url('../images/bgimg2.jpg');
     background-position: center;
     background-size: cover;
     border-left: 2px solid #E22B63;
