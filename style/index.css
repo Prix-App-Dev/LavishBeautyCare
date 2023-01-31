@@ -27,7 +27,7 @@
     border: 1px solid #E22B63;
     color:#E22B63;
     height: 7vh;
-    width:20vw;
+    width:19vw;
     padding: 3px;
     letter-spacing: 1px;
     display: flex;
@@ -37,7 +37,7 @@
     font-size: 1.5vw;
 }
 #topbarMidSection a{
-    width:20vw;
+    width:19vw;
     height: 7vh;
     padding: 3px;
     display: flex;
