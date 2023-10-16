@@ -35,9 +35,14 @@ body{
 }
 .card{
     margin: 2rem;
+    box-shadow: 10px 10px 12px 3px gray;
+
 }
 .card-image-top{
     height: 30vh;
+}
+.card-title{
+    color:orangered;
 }
 #contactus{
     background-image: url('../images/bgimg1.jpg');
