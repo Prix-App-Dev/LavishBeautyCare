@@ -50,6 +50,9 @@ body{
     background-position: center;
     
 }
+#gmap{
+    width: 50vw;
+}
 @media screen and (max-width: 768px) {
     #topbar{
         flex-wrap: wrap;
@@ -60,6 +63,9 @@ body{
         width:45vw;
         margin: 0.25vh;
         text-align: center;        
+    }
+    #gmap{
+        width: 60vw;
     }
 }
 
@@ -72,6 +78,9 @@ body{
         width: fit-content;
         margin: 0;
         padding: 0;
+    }
+    #gmap{
+        width: 90vw;
     }
 }
 /* // X-Small devices (portrait phones, less than 576px)
